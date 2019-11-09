@@ -1,2 +1,2 @@
 # C-Programs
-C Program For Begineers 
+C Program For Beginners 
