@@ -2,26 +2,20 @@
 -------------------------------------------------------
 Name         : Factorial
 Author       : Kushal Singh Rathore
-Discription  : Factorial By Function 
+Discription  : Finding Factorial Of Enterd Number(Loop)
 -------------------------------------------------------
 */
 
 #include<stdio.h>
-int factorial(int number)
-{
-    if(number==0||number==1)
-    return 1;
-
-else
-{
-    return (number*factorial(number-1));
-}
-}
 int main()
 {
-    int num;
-    printf("please enter the number");
-    scanf("%d",&num);
-    printf("the factorial of %d is %d",num,factorial(num));
+    int a,fact=1;
+    printf("Enter the value of a");
+    scanf("%d",&a);
+    for(int i=1;i<=a;i++)
+    {
+        fact=fact*i;
+    }
+    printf("%d",fact);
     return 0;
 }

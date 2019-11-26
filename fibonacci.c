@@ -13,7 +13,7 @@ int main()
     int b=1;
     int c,d;
 
-    printf("write the up to which you want fibonacci");
+    printf("write the value up to which you want fibonacci");
     scanf("%d",&d);
     
     printf("%d %d ",a,b);
