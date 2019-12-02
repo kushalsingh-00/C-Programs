@@ -2,7 +2,7 @@
 -------------------------------------------------------
 Name         : Star Pattern
 Author       : Kushal Singh Rathore
-Discription  : Pattern By Nested Looping
+Discription  : Printing Stars(Right Triangle)
 -------------------------------------------------------
 */
 
