@@ -1,6 +1,6 @@
 /*
 -------------------------------------------------------
-Name         : Transpose Of A Matrix
+Name         : Transpose
 Author       : Kushal Singh Rathore
 Discription  : Transpose Of A Enterd Matrix
 -------------------------------------------------------
