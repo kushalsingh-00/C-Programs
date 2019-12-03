@@ -2,7 +2,7 @@
 -------------------------------------------------------
 Name         : Star Pattern
 Author       : Kushal Singh Rathore
-Discription  : Printing Stars(Right T'riangle)
+Discription  : Printing Stars(Right Triangle)
 -------------------------------------------------------
 */
 
