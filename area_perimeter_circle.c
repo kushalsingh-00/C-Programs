@@ -1,6 +1,6 @@
 /*
 -------------------------------------------------------
-Name         : Area ANd Perimeter Of A Circle
+Name         : Area And Perimeter Of A Circle
 Author       : Kushal Singh Rathore
 Discription  : Code For Area And Perimeter with #define
 -------------------------------------------------------
