@@ -11,7 +11,7 @@ Discription  : Using Of Static Keyword
 int increment()
 {
     static int count;          // it also restrict using a variable in other file
-    count=count+1;
+    count=count+1;      //no value is initilize as garbas
     return count;
 }
 int main()
