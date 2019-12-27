@@ -7,7 +7,7 @@ Discription  : Define As PreProcessor #define As Func
 */
 
 #include<stdio.h>
-#define greater(x,y) if(x>y) \
+#define greater(x,y) if(x>y) \     
                         printf("%d is greater",x); \
                      else \
                         printf("%d is greater",y);
