@@ -17,3 +17,5 @@ int main()
     printf("%d",i);  //if we initilize it as 0 it store in bss
     return 0;
 }
+
+//for sixe we use command in command line i size filename.exe
