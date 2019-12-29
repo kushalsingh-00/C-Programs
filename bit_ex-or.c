@@ -13,6 +13,6 @@ int main()
     a=a^b;
     b=a^b;
     a=a^b;
-    printf("After XOR, a=%d and b=%d",a,b);
+    printf("After XOR, a=%d and b=%d",a,b);    // a=3,b=4
     return 0;
 }
