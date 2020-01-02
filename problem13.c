@@ -1,6 +1,6 @@
 /*
 -------------------------------------------------------
-Name         : Problem 10
+Name         : Problem 13
 Author       : Kushal Singh Rathore
 Discription  : Problem Solution 
 -------------------------------------------------------
