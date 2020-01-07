@@ -25,7 +25,7 @@ int main()
         }
     }
     printf("Enter the rows and column of matrix b: ");
-    scanf("%d %d",brows,&bcolumns);
+    scanf("%d %d",&brows,&bcolumns);
 
     if(brows!=acolumns)
     {
