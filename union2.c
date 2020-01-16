@@ -1,8 +1,8 @@
 /*
 -------------------------------------------------------
-Name         : Structure 
+Name         : Union
 Author       : Kushal Singh Rathore
-Discription  : Structure Problem
+Discription  : Union Problem
 -------------------------------------------------------
 */
 
