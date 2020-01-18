@@ -32,7 +32,7 @@ int main()
                 printf("%d",k);
                 if(i>j)
                     k=k-1;
-                if(i+j>2*n)
+                if(i+j>=2*n)
                     k=k+1;
             }
         }
@@ -41,7 +41,7 @@ int main()
             for(j=1;j<2*n;j++)
             {
                 printf("%d",k);
-                if(i<j)
+                if(i<=j)
                     k=k+1;
                 if(i+j<2*n)
                     k=k-1;
