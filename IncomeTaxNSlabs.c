@@ -2,67 +2,54 @@
 int main()
 {
     int no_of_slabs;
-    int limits[100][2];
+    int U_limits[100];  //for taking the lower limit of each slab
+    int L_limits[100];  //for taking the upper limit of each slab
     int tax[100];
-    int salary,n,found=0,index;
+    int tax_cal[100];
+    int c_tax[100];
+    int add_tax=0;
+    int salary;
+    int slab,actual_tax=0;
     printf("Enter the no of slabs\n");
     scanf("%d",&no_of_slabs);
-    printf("Enter the slabs limit\n");
+    printf("Enter the Lower and Upper limit of each slabs\n");
     for(int i=0;i<no_of_slabs;i++)
     {
-        printf("Enter the limit of slab number %d:",i+1);
-        for(int j=0;j<2;j++)
-        {
-            scanf("%d",&limits[i][j]);
-        }
+        printf("Enter the Lower and Upper Limit of slab %d\n",i+1);
+        printf("Lower Limit:");
+        scanf("%d",&L_limits[i]);         
+        printf("Upper Limit:");
+        scanf("%d",&U_limits[i]);     
         printf("Enter the tax for slab no %d:",i+1);
         scanf("%d",&tax[i]);
-    }
+    } 
 
-    printf("slab are as follows\n");
+    //for calculation of tax according value enterd by user
+
     for(int i=0;i<no_of_slabs;i++)
     {
-        for(int j=0;j<2;j++)
-        {
-            printf("%d-",limits[i][j]);
-        }
-        printf(" %d\n",tax[i]);
+        
+        tax_cal[i]=(tax[i]/100.0)*(U_limits[i]-L_limits[i]);
+        add_tax=add_tax+tax_cal[i];
+        c_tax[i]=add_tax;
     }
 
-    printf("Enter the salary:");
+    //taking input of salary
+    printf("Enter the salary");
     scanf("%d",&salary);
-
-    for(int i=salary;i>0;i--)
-    {
-        for(int j=0;j<no_of_slabs;j++)
-        {
-            for(int k=0;k<2;k++)
-            {
-                if(limits[j][k]==i)
-                {
-                    n=i;
-                    found=1;
-                    break;
-                }
-            }
-            if(found==1)
-            break;
-        }
-        if(found==1)
-        break;
-    }
-
+    
+    // finding the slab number in which salary exist
     for(int i=0;i<no_of_slabs;i++)
     {
-        for(int j=0;j<2;j++)
-        {
-            if(limits[i][j]==n)
-            {
-            index=i;
-            break;
-            }
-        }
+      if(salary>L_limits[i]&&salary<U_limits[i])
+      {
+        slab=i;
+        break;
+      }
+    
     }
-
-
+    
+    //calculation of tax 
+    actual_tax=c_tax[slab-1]+(tax[slab]/100.0*(salary-L_limits[slab]));
+    printf("%d",actual_tax);
 }
