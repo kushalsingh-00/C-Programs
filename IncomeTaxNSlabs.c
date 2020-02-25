@@ -1,3 +1,5 @@
+//salary to tax
+
 #include<stdio.h>
 int main()
 {
